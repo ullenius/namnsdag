@@ -1,6 +1,17 @@
 "use strict";
 
+var http = require("http");
 var months = require("./data.js");
+
+
+// server
+var server = http.createServer();
+
+var namesToday = function(req, res) {
+    var names = getNames( new Date() );
+    var json = JSON.stringify( names ? names : [] );
+    res.end( json );
+};
 
 function getNames(date) {
     var month = date.getMonth(); // 0-indexed array
@@ -12,17 +23,8 @@ function getNames(date) {
     return names;
 }
 
-var names = getNames( new Date() );
-console.log("names:", names);
+server.on("request", namesToday);
 
-// servern
-var http = require("http");
-var server = http.createServer( function hello(req, res) {
-    var names = getNames( new Date() );
-    var json = JSON.stringify( names ? names : [] );
-    res.end( json );
-});
-
-server.listen(4242, function foo() {
+server.listen(4242, function run() {
     console.log("Namnsdag-server is running...");
 });

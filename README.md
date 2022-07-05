@@ -4,7 +4,7 @@
 * Includes a REST API that returns the names of the current day.
 
 ## Features
-* Vanilla node.js - no runtime depdencies.
+* Vanilla node.js - no runtime dependencies.
 
 * Up to date with the 2022 edition of the name calendar published by *Namnlängdskommittén*.
 
@@ -71,7 +71,7 @@ See [COPYING](COPYING).
 
 * [The perils of LGPLv3](https://nikmav.blogspot.com/2013/03/the-perils-of-lgplv3.html)
 
-* FSF [LGPL compatibility matrix](http://gplv3.fsf.org/dd3-faq#gpl-compat-matrix)
+* FSF [LGPL compatibility matrix](https://gplv3.fsf.org/dd3-faq#gpl-compat-matrix)
 
 ### Libraries
 Uses [JEST](https://github.com/facebook/jest) for unit tests.

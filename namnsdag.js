@@ -8,7 +8,9 @@ var server = http.createServer();
 var namesToday = function(req, res) {
     var names = getNames( new Date() );
     var json = JSON.stringify( names ? names : [] );
-    res.end( json );
+    res.setHeader("Content-Type", "application/json");
+    res.write( json );
+    res.end();
 };
 
 function getNames(date) {

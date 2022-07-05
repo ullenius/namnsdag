@@ -1,19 +1,19 @@
 "use strict";
 
 var january = {
-    "1" : [ "(inge", "namnsdag)" ],
-    "2" : [ "Svea"  ],
+    "1" : undefined, // ingen namnsdag
+    "2" : [ "Svea" ],
     "3" : [ "Alfred", "Alfrida" ],
-    "4" : [ "Rut"  ],
+    "4" : [ "Rut" ],
     "5" : [ "Hanna", "Hannele" ],
     "6" : [ "Kasper", "Melker," ],
     "7" : [ "August", "Augusta" ],
-    "8" : [ "Erland"  ],
+    "8" : [ "Erland" ],
     "9" : [ "Gunnar", "Gunder" ],
     "10" : [ "Sigurd", "Sigbritt" ],
     "11" : [ "Jan", "Jannike" ],
     "12" : [ "Frideborg", "Fridolf" ],
-    "13" : [ "Knut"  ],
+    "13" : [ "Knut" ],
     "14" : [ "Felix", "Felicia" ],
     "15" : [ "Laura", "Lorentz" ],
     "16" : [ "Hjalmar", "Helmer" ],
@@ -24,19 +24,19 @@ var january = {
     "21" : [ "Agnes", "Agneta" ],
     "22" : [ "Vincent", "Viktor" ],
     "23" : [ "Frej", "Freja" ],
-    "24" : [ "Erika"  ],
+    "24" : [ "Erika" ],
     "25" : [ "Paul", "Pål" ],
     "26" : [ "Bodil", "Boel" ],
     "27" : [ "Göte", "Göta" ],
     "28" : [ "Karl", "Karla" ],
-    "29" : [ "Diana"  ],
+    "29" : [ "Diana" ],
     "30" : [ "Gunilla", "Gunhild" ],
     "31" : [ "Ivar", "Joar" ]
 };
-//Februari" : [ "undefined"  ],
+
 var february = {
     "1" : [ "Max", "Maximilian" ],
-    "2" : [ "(inge", "namnsdag)" ],
+    "2" : undefined, // ingen namnsdag
     "3" : [ "Disa", "Hjördis" ],
     "4" : [ "Ansgar", "Anselm" ],
     "5" : [ "Agata", "Agda" ],
@@ -44,28 +44,28 @@ var february = {
     "7" : [ "Rikard", "Dick" ],
     "8" : [ "Berta", "Bert" ],
     "9" : [ "Fanny", "Franciska" ],
-    "10" : [ "Iris"  ],
+    "10" : [ "Iris" ],
     "11" : [ "Yngve", "Inge" ],
     "12" : [ "Evelina", "Evy" ],
     "13" : [ "Agne", "Ove" ],
-    "14" : [ "Valentin"  ],
-    "15" : [ "Sigfrid"  ],
+    "14" : [ "Valentin" ],
+    "15" : [ "Sigfrid" ],
     "16" : [ "Julia", "Julius" ],
     "17" : [ "Alexandra", "Sandra" ],
     "18" : [ "Frida", "Fritiof" ],
     "19" : [ "Gabriella", "Ella" ],
     "20" : [ "Vivianne"  ],
     "21" : [ "Hilding"  ],
-    "22" : [ "Pia"  ],
+    "22" : [ "Pia" ],
     "23" : [ "Torsten", "Torun" ],
     "24" : [ "Mattias", "Mats" ],
     "25" : [ "Sigvard", "Sivert" ],
     "26" : [ "Torgny", "Torkel" ],
-    "27" : [ "Lage"  ],
+    "27" : [ "Lage" ],
     "28" : [ "Maria", "Maja" ],
-    "29" : undefined // [ "(inge", "namnsdag)" ],
+    "29" : undefined // ingen namnsdag
 };
-//Mars" : [ "undefined"  ],
+
 var mars = {
     "1" : [ "Albin", "Elvira" ],
     "2" : [ "Ernst", "Erna" ],
@@ -73,33 +73,33 @@ var mars = {
     "4" : [ "Adrian", "Adriana" ],
     "5" : [ "Tora", "Tove" ],
     "6" : [ "Ebba", "Ebbe" ],
-    "7" : [ "Camilla"  ],
+    "7" : [ "Camilla" ],
     "8" : [ "Siv", "Saga" ],
     "9" : [ "Torbjörn", "Torleif" ],
     "10" : [ "Edla", "Ada" ],
     "11" : [ "Edvin", "Egon" ],
     "12" : [ "Viktoria", "Regina" ],
-    "13" : [ "Greger"  ],
+    "13" : [ "Greger" ],
     "14" : [ "Matilda", "Maud" ],
     "15" : [ "Kristoffer", "Christel" ],
     "16" : [ "Herbert", "Gilbert" ],
-    "17" : [ "Gertrud"  ],
+    "17" : [ "Gertrud" ],
     "18" : [ "Edvard", "Edmund" ],
     "19" : [ "Josef", "Josefina" ],
     "20" : [ "Joakim", "Kim" ],
-    "21" : [ "Bengt"  ],
+    "21" : [ "Bengt" ],
     "22" : [ "Kennet", "Kent" ],
     "23" : [ "Gerda", "Gerd" ],
     "24" : [ "Gabriel", "Rafael" ],
-    "25" : [ "(inge", "namnsdag)" ],
-    "26" : [ "Emanuel"  ],
+    "25" : undefined, // ingen namnsdag
+    "26" : [ "Emanuel" ],
     "27" : [ "Rudolf", "Ralf" ],
     "28" : [ "Malkolm", "Morgan" ],
     "29" : [ "Jonas", "Jens" ],
     "30" : [ "Holger", "Holmfrid" ],
     "31" : [ "Ester", "Noa" ]
 };
-//April" : [ "undefined"  ],
+
 var april = {
     "1" : [ "Harald", "Hervor" ],
     "2" : [ "Gudmund", "Ingemund" ],
@@ -112,9 +112,9 @@ var april = {
     "9" : [ "Otto", "Ottilia" ],
     "10" : [ "Ingvar", "Ingvor" ],
     "11" : [ "Ulf", "Ylva" ],
-    "12" : [ "Liv"  ],
+    "12" : [ "Liv" ],
     "13" : [ "Artur", "Douglas" ],
-    "14" : [ "Tiburtius"  ],
+    "14" : [ "Tiburtius" ],
     "15" : [ "Olivia", "Oliver" ],
     "16" : [ "Patrik", "Patricia" ],
     "17" : [ "Elias", "Elis" ],
@@ -124,24 +124,24 @@ var april = {
     "21" : [ "Anneli", "Annika" ],
     "22" : [ "Allan", "Glenn" ],
     "23" : [ "Georg", "Göran" ],
-    "24" : [ "Vega"  ],
+    "24" : [ "Vega" ],
     "25" : [ "Markus"  ],
     "26" : [ "Teresia", "Terese" ],
-    "27" : [ "Engelbrekt"  ],
+    "27" : [ "Engelbrekt" ],
     "28" : [ "Ture", "Tyra" ],
-    "29" : [ "Tyko"  ],
-    "30" : [ "Mariana", "(Valborgsmässoafton)" ]
+    "29" : [ "Tyko" ],
+    "30" : [ "Mariana" ]
 };
-//Maj" : [ "undefined"  ],
+
 var may = {
-    "1" : [ "Valborg", "(Första" ],
+    "1" : [ "Valborg" ],
     "2" : [ "Filip", "Filippa" ],
     "3" : [ "John", "Jane" ],
     "4" : [ "Monika", "Mona" ],
     "5" : [ "Gotthard", "Erhard" ],
     "6" : [ "Marit", "Rita" ],
     "7" : [ "Carina", "Carita" ],
-    "8" : [ "Åke"  ],
+    "8" : [ "Åke" ],
     "9" : [ "Reidar", "Reidun" ],
     "10" : [ "Esbjörn", "Styrbjörn" ],
     "11" : [ "Märta", "Märit" ],
@@ -158,7 +158,7 @@ var may = {
     "22" : [ "Hemming", "Henning" ],
     "23" : [ "Desideria", "Desirée" ],
     "24" : [ "Ivan", "Vanja" ],
-    "25" : [ "Urban"  ],
+    "25" : [ "Urban" ],
     "26" : [ "Vilhelmina", "Vilma" ],
     "27" : [ "Beda", "Blenda" ],
     "28" : [ "Ingeborg", "Borghild" ],
@@ -167,20 +167,19 @@ var may = {
     "31" : [ "Petronella", "Pernilla" ]
 };
 
-//Juni" : [ "undefined"  ],
 var june = {
     "1" : [ "Gun", "Gunnel" ],
     "2" : [ "Rutger", "Roger" ],
     "3" : [ "Ingemar", "Gudmar" ],
     "4" : [ "Solbritt", "Solveig" ],
-    "5" : [ "Bo"  ],
+    "5" : [ "Bo" ],
     "6" : [ "Gustav", "Gösta" ],
     "7" : [ "Robert", "Robin" ],
     "8" : [ "Eivor", "Majvor" ],
     "9" : [ "Börje", "Birger" ],
     "10" : [ "Svante", "Boris" ],
     "11" : [ "Bertil", "Berthold" ],
-    "12" : [ "Eskil"  ],
+    "12" : [ "Eskil" ],
     "13" : [ "Aina", "Aino" ],
     "14" : [ "Håkan", "Hakon" ],
     "15" : [ "Margit", "Margot" ],
@@ -188,28 +187,28 @@ var june = {
     "17" : [ "Torborg", "Torvald" ],
     "18" : [ "Björn", "Bjarne" ],
     "19" : [ "Germund", "Görel" ],
-    "20" : [ "Linda"  ],
+    "20" : [ "Linda" ],
     "21" : [ "Alf", "Alvar" ],
     "22" : [ "Paulina", "Paula" ],
     "23" : [ "Adolf", "Alice" ],
-    "24" : [ "(inge", "namnsdag)" ],
+    "24" : undefined, // ingen namnsdag
     "25" : [ "David", "Salomon" ],
     "26" : [ "Rakel", "Lea" ],
     "27" : [ "Selma", "Fingal" ],
-    "28" : [ "Leo"  ],
+    "28" : [ "Leo" ],
     "29" : [ "Peter", "Petra" ],
     "30" : [ "Elof", "Leif" ]
 };
-//juli
+
 var july = {
     "1" : [ "Aron", "Mirjam" ],
     "2" : [ "Rosa", "Rosita" ],
-    "3" : [ "Aurora"  ],
+    "3" : [ "Aurora" ],
     "4" : [ "Ulrika", "Ulla" ],
     "5" : [ "Laila", "Ritva" ],
     "6" : [ "Esaias", "Jessika" ],
-    "7" : [ "Klas"  ],
-    "8" : [ "Kjell"  ],
+    "7" : [ "Klas" ],
+    "8" : [ "Kjell" ],
     "9" : [ "Jörgen", "Örjan" ],
     "10" : [ "André", "Andrea" ],
     "11" : [ "Eleonora", "Ellinor" ],
@@ -226,16 +225,15 @@ var july = {
     "22" : [ "Magdalena", "Madeleine" ],
     "23" : [ "Emma", "Emmy" ],
     "24" : [ "Kristina", "Kerstin" ],
-    "25" : [ "Jakob"  ],
+    "25" : [ "Jakob" ],
     "26" : [ "Jesper", "Jasmine" ],
-    "27" : [ "Marta"  ],
+    "27" : [ "Marta" ],
     "28" : [ "Botvid", "Seved" ],
     "29" : [ "Olof", "Olle" ],
-    "30" : [ "Algot"  ],
+    "30" : [ "Algot" ],
     "31" : [ "Helena", "Elin" ]
 };
 
-//Augusti" : [ "undefined"  ],
 var august = {
     "1" : [ "Per"  ],
     "2" : [ "Karin", "Kajsa" ],
@@ -246,11 +244,11 @@ var august = {
     "7" : [ "Dennis", "Denise" ],
     "8" : [ "Silvia", "Sylvia" ],
     "9" : [ "Roland"  ],
-    "10" : [ "Lars"  ],
+    "10" : [ "Lars" ],
     "11" : [ "Susanna"  ],
     "12" : [ "Klara"  ],
-    "13" : [ "Kaj"  ],
-    "14" : [ "Uno"  ],
+    "13" : [ "Kaj" ],
+    "14" : [ "Uno" ],
     "15" : [ "Stella", "Estelle" ],
     "16" : [ "Brynolf"  ],
     "17" : [ "Verner", "Valter" ],
@@ -262,19 +260,19 @@ var august = {
     "23" : [ "Signe", "Signhild" ],
     "24" : [ "Bartolomeus"  ],
     "25" : [ "Lovisa", "Louise" ],
-    "26" : [ "Östen"  ],
+    "26" : [ "Östen" ],
     "27" : [ "Rolf", "Raoul" ],
     "28" : [ "Fatima", "Leila" ],
     "29" : [ "Hans", "Hampus" ],
     "30" : [ "Albert", "Albertina" ],
     "31" : [ "Arvid", "Vidar" ]
 };
-//September" : [ "undefined"  ],
+
 var september = {
     "1" : [ "Samuel", "Sam" ],
     "2" : [ "Justus", "Justina" ],
     "3" : [ "Alfhild", "Alva" ],
-    "4" : [ "Gisela"  ],
+    "4" : [ "Gisela" ],
     "5" : [ "Adela", "Heidi" ],
     "6" : [ "Lilian", "Lilly" ],
     "7" : [ "Kevin", "Roy" ],
@@ -283,15 +281,15 @@ var september = {
     "10" : [ "Tord", "Turid" ],
     "11" : [ "Dagny", "Helny" ],
     "12" : [ "Åsa", "Åslög" ],
-    "13" : [ "Sture"  ],
+    "13" : [ "Sture" ],
     "14" : [ "Ida", "Ronja" ],
     "15" : [ "Sigrid", "Siri" ],
     "16" : [ "Dag", "Daga" ],
     "17" : [ "Hildegard", "Magnhild" ],
-    "18" : [ "Orvar"  ],
-    "19" : [ "Fredrika"  ],
+    "18" : [ "Orvar" ],
+    "19" : [ "Fredrika" ],
     "20" : [ "Elise", "Lisa" ],
-    "21" : [ "Matteus"  ],
+    "21" : [ "Matteus" ],
     "22" : [ "Maurits", "Moritz" ],
     "23" : [ "Tekla", "Tea" ],
     "24" : [ "Gerhard", "Gert" ],
@@ -300,10 +298,10 @@ var september = {
     "27" : [ "Dagmar", "Rigmor" ],
     "28" : [ "Lennart", "Leonard" ],
     "29" : [ "Mikael", "Mikaela" ],
-    "30" : [ "Helge"  ]
+    "30" : [ "Helge" ]
 }
+
 var october = {
-//Oktober" : [ "undefined"  ],
     "1" : [ "Ragnar", "Ragna" ],
     "2" : [ "Ludvig", "Love" ],
     "3" : [ "Evald", "Osvald" ],
@@ -317,9 +315,9 @@ var october = {
     "11" : [ "Erling", "Jarl" ],
     "12" : [ "Valfrid", "Manfred" ],
     "13" : [ "Berit", "Birgit" ],
-    "14" : [ "Stellan"  ],
+    "14" : [ "Stellan" ],
     "15" : [ "Hedvig", "Hillevi" ],
-    "16" : [ "Finn"  ],
+    "16" : [ "Finn" ],
     "17" : [ "Antonia", "Toini" ],
     "18" : [ "Lukas"  ],
     "19" : [ "Tore", "Tor" ],
@@ -330,15 +328,15 @@ var october = {
     "24" : [ "Evert", "Eilert" ],
     "25" : [ "Inga", "Ingalill" ],
     "26" : [ "Amanda", "Rasmus" ],
-    "27" : [ "Sabina"  ],
+    "27" : [ "Sabina" ],
     "28" : [ "Simon", "Simone" ],
     "29" : [ "Viola"  ],
     "30" : [ "Elsa", "Isabella" ],
     "31" : [ "Edit", "Edgar" ]
 };
-//November"
+
 var november = {
-    "1" : [ "(inge", "namnsdag)" ],
+    "1" : undefined,
     "2" : [ "Tobias", "Tim" ],
     "3" : [ "Hubert", "Hugo" ],
     "4" : [ "Sverker"  ],
@@ -369,7 +367,7 @@ var november = {
     "29" : [ "Sune"  ],
     "30" : [ "Andreas", "Anders" ]
 };
-//December
+
 var december = {
     "1" : [ "Oskar", "Ossian" ],
     "2" : [ "Beata", "Beatrice" ],
@@ -394,11 +392,11 @@ var december = {
     "21" : [ "Tomas"  ],
     "22" : [ "Natanael", "Jonatan" ],
     "23" : [ "Adam"  ],
-    "24" : [ "Eva", "(Julafton)" ],
-    "25" : [ "(inge", "namnsdag)" ],
+    "24" : [ "Eva" ],
+    "25" : undefined, // ingen namnsdag
     "26" : [ "Stefan", "Staffan," ],
     "27" : [ "Johannes", "Johan" ],
-    "28" : [ "Benjamin", "(Värnlösa" ],
+    "28" : [ "Benjamin" ],
     "29" : [ "Natalia", "Natalie" ],
     "30" : [ "Abel", "Set" ],
     "31" : [ "Sylvester"  ]

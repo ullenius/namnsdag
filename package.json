@@ -1,0 +1,21 @@
+{
+  "name": "namnsdag",
+  "version": "1.0.0",
+  "description": "Swedish name day calendar. Includes REST API.",
+  "main": "namnsdag.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ullenius/namnsdag.git"
+  },
+  "author": "Anosh Ullenius",
+  "license": "LGPL-2.1",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

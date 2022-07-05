@@ -53,7 +53,7 @@ var aprilFoolsDay = april[1]; // [ "Hararld", "Hervor" ]
 ## Build
 Requirements:
 
-* node.js v12.x or later.
+* node.js v10.x or later.
 
 npm is only required in order to install dependencies used by the unit tests.
 

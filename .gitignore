@@ -1,0 +1,6 @@
+quotes.js
+*.swp
+*.tmp
+*.zip
+
+node_modules/

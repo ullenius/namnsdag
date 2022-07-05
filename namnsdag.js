@@ -3,8 +3,6 @@
 var http = require("http");
 var months = require("./data.js");
 
-
-// server
 var server = http.createServer();
 
 var namesToday = function(req, res) {
@@ -14,11 +12,10 @@ var namesToday = function(req, res) {
 };
 
 function getNames(date) {
-    var month = date.getMonth(); // 0-indexed array
+    var month = date.getMonth();
     var day = date.getDate();
-    console.log("day", day); // debug
 
-    var currentMonth = months[month];
+    var currentMonth = months[month]; // 0-indexed array
     var names = currentMonth[day];
     return names;
 }

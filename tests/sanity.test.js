@@ -15,10 +15,23 @@ var countDays = function numberOfDays(months, func=daysWithNames) {
 
             months.forEach( function sumMonth(month) {
                 var days = Object.values(month);
+
+                var mapped = days.map( function map(day) {
+                    return func(day);
+                });
+                //console.log("mapped", mapped);
+                var result = days.map( func ).reduce( function sum(a,b) {
+                    return a + b;
+                });
+                sum += result;
+                console.log("result", result);
+
+/*
                 days.forEach( function counter(day) {
                     var count = func(day);
                     sum = sum + count;
                 });
+                */
             });
             return sum;
 };

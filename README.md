@@ -31,20 +31,20 @@ $ curl http://localhost:4242
 
 ```javascript
 var months = require("./data.js");
-       var [
-                january,
-                february,
-                mars,
-                april,
-                may,
-                june,
-                july,
-                august,
-                september,
-                october,
-                november,
-                december
-            ] = months;
+var [
+    january,
+    february,
+    mars,
+    april,
+    may,
+    june,
+    july,
+    august,
+    september,
+    october,
+    november,
+    december
+    ] = months;
 
 var leapDay = february[29]; // undefined
 var aprilFoolsDay = april[1]; // [ "Hararld", "Hervor" ]
@@ -52,10 +52,11 @@ var aprilFoolsDay = april[1]; // [ "Hararld", "Hervor" ]
 
 ## Build
 Requirements:
+* node.js v8.x or later.
+* npm is *not* needed.
 
-* node.js v10.x or later.
-
-npm is only required in order to install dependencies used by the unit tests.
+## Running tests
+npm is only required in order to run the unit tests.
 
 ```bash
 $ npm install

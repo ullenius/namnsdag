@@ -11,29 +11,19 @@ var namelessDays = function count( nameArr) {
 };
 
 var countDays = function numberOfDays(months, func=daysWithNames) {
-            var sum = 0;
-
-            months.forEach( function sumMonth(month) {
-                var days = Object.values(month);
-
-                var mapped = days.map( function map(day) {
-                    return func(day);
-                });
-                //console.log("mapped", mapped);
-                var result = days.map( func ).reduce( function sum(a,b) {
+            return months
+                .map(function sumMonth(month) { 
+                    var days = Object.values(month);
+                    var result = days
+                        .map( func )
+                        .reduce( function sum(a,b) {
+                            return a + b;
+                        });
+                    return result;
+                    })
+                .reduce( function summera(a,b) {
                     return a + b;
                 });
-                sum += result;
-                console.log("result", result);
-
-/*
-                days.forEach( function counter(day) {
-                    var count = func(day);
-                    sum = sum + count;
-                });
-                */
-            });
-            return sum;
 };
 
 describe("hasAllNames", function validAmount() {

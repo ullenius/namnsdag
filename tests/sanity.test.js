@@ -2,8 +2,8 @@
 
 var months = require("../data.js");
 
-var daysWithNames = function count( nameArr) {
-    return nameArr ? nameArr.length : 0;
+var daysWithNames = function count(nameArr = []) {
+    return nameArr.length;
 };
 
 var namelessDays = function count( nameArr) {
@@ -14,14 +14,13 @@ var countDays = function numberOfDays(months, func=daysWithNames) {
             return months
                 .map(function sumMonth(month) { 
                     var days = Object.values(month);
-                    var result = days
+                    return days
                         .map( func )
                         .reduce( function sum(a,b) {
                             return a + b;
                         });
-                    return result;
                     })
-                .reduce( function summera(a,b) {
+                .reduce( function sum(a,b) {
                     return a + b;
                 });
 };

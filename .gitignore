@@ -2,7 +2,7 @@ quotes.js
 *.swp
 *.tmp
 *.zip
-
-run.sh # env-variables for CORS
+# env-variables for CORS
+run.sh
 
 node_modules/

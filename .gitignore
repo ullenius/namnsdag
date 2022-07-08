@@ -3,4 +3,6 @@ quotes.js
 *.tmp
 *.zip
 
+run.sh # env-variables for CORS
+
 node_modules/

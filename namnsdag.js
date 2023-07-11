@@ -2,12 +2,13 @@
 
 var http = require("http");
 var months = require("./data.js");
+var PORT = 4242;
 
 var server = http.createServer();
 
 var namesToday = function(req, res) {
     var names = getNames( new Date() );
-    var json = JSON.stringify( names ? names : [] );
+    var json = JSON.stringify( names || [] );
     res.setHeader("Content-Type", "application/json");
     setCors(res);
     res.write( json );
@@ -31,5 +32,5 @@ function getNames(date) {
 server.on("request", namesToday);
 
 server.listen(4242, function run() {
-    console.log("Namnsdag-server is running...");
+    console.log(`Namnsdag-server is running (port ${PORT})...`);
 });

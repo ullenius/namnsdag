@@ -27,7 +27,7 @@ var countDays = function numberOfDays(months, func=daysWithNames) {
 
 describe("hasAllNames", function validAmount() {
     test("Correct amount of names for 2022 calendar", function assert() {
-            var expected = 627;
+            var expected = 626;
             var actual = countDays(months);
             expect( actual ).toBe( expected )
     });

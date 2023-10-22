@@ -341,7 +341,7 @@ var november = {
     "3" : [ "Hubert", "Hugo" ],
     "4" : [ "Sverker"  ],
     "5" : [ "Eugen", "Eugenia" ],
-    "6" : [ "Gusta", "Adolf" ],
+    "6" : [ "Gustav Adolf" ],
     "7" : [ "Ingegerd", "Ingela" ],
     "8" : [ "Vendela"  ],
     "9" : [ "Teodor", "Teodora" ],
